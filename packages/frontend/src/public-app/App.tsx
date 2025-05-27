@@ -4,10 +4,12 @@ import LoginPage from "./pages/login";
 import HomePage from "./pages/home";
 
 export const PublicApp = () => {
-  <BrowserRouter>
-    <Routes>
-      <Route path={publicPath.login} element={<LoginPage />} />
-      <Route path="/" element={<HomePage />} />
-    </Routes>
-  </BrowserRouter>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path={publicPath.login} element={<LoginPage />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
