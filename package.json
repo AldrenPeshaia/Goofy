@@ -1,0 +1,7 @@
+{
+  "name": "goofyfades",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

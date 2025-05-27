@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: fades:latest
+    container_name: fades_db
+    restart: always
+    environment:
+      POSTGRES_USER: default
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

@@ -1,0 +1,5 @@
+# Dep
+node_modules/
+
+## Env ignore
+.env
